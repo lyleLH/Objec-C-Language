@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		265AD2891E79740A00CBFC65 /* MTTStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 265AD2881E79740A00CBFC65 /* MTTStudent.m */; };
 		98E213EB1E73DB4D00283F6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E213EA1E73DB4D00283F6A /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		265AD2871E79740A00CBFC65 /* MTTStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTStudent.h; sourceTree = "<group>"; };
+		265AD2881E79740A00CBFC65 /* MTTStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTStudent.m; sourceTree = "<group>"; };
 		98E213E71E73DB4D00283F6A /* Objet-C-Language */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Objet-C-Language"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E213EA1E73DB4D00283F6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				98E213EA1E73DB4D00283F6A /* main.m */,
+				265AD2871E79740A00CBFC65 /* MTTStudent.h */,
+				265AD2881E79740A00CBFC65 /* MTTStudent.m */,
 			);
 			path = "Objet-C-Language";
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98E213EB1E73DB4D00283F6A /* main.m in Sources */,
+				265AD2891E79740A00CBFC65 /* MTTStudent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +252,7 @@
 				98E213F01E73DB4D00283F6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

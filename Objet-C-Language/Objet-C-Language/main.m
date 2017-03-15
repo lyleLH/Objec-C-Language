@@ -9,55 +9,51 @@
 #import <Foundation/Foundation.h>
 #import <objc/objc.h>
 #import <objc/runtime.h>
-typedef struct student {
+
+#import "MTTStudent.h"
+
+struct gstudent {
     char name[20];
     int age;
     float height;
-}SZStudent;
+    
+};
 
+typedef struct {
+    char name[20];
+    int age;
+    float height;
+    
+}Student;
 
-
-
-
+//编写一个函数，用来修改某一个学生的身高
+/*接受的参数为:
+    struct gstudent *   类型（一个结构体指针）
+    int                 类型
+ */
+void changeStudentHeight (struct gstudent * student,int height) {
+    
+    //
+    student->height = height;
+    
+}
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        
-        struct {
-            char name[20];
-            int age;
-            float height;
-        } a,b;
-        a.age = 20;
-        a.height = 178;
-        strcpy(a.name,  "Major Tom");
-        
-        SZStudent xiaoming ;
-        xiaoming.age = 18;
+        //结构体的初始化
+        struct gstudent tom = {"tom liu",25,170};
     
-        int tom = 180;
-        int jack = 170;
-        int *patrick ;
-        patrick = &tom;
-        *patrick = jack;
+        changeStudentHeight(&tom,180);//tom两个月后长到了180公分
         
-        printf("patrick的内容是%p，*patrick的值是:%d\n",patrick,*patrick);
-        /*
-         (lldb) p &tom
-         (int *) $2 = 0x00007fff5fbff6f4
-         (lldb) p patrick
-         (int *) $3 = 0x00007fff5fbff6f4
-         (lldb) p patrick
-         (int *) $4 = 0x00007fff5fbff6f4
-         (lldb) p *patrick
-         (int) $5 = 180
-         */
+        printf("tom现在的身高是%f\n",tom.height);
         
-        /*
-         指针patrick  指向 0x00007fff5fbff6f4
-         *patrick 指向 0x00007fff5fbff6f4的别名 “tom”
-         */
+        MTTStudent * Kangkang = [[MTTStudent alloc] init];
+        Kangkang->_age = 25;
+        
+        Student tom2 ={"tom liu",25,170};
+        
+        
     }
     return 0;
 }
