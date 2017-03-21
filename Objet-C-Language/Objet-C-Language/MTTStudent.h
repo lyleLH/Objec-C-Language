@@ -15,5 +15,5 @@
     CGFloat _height;
 }
 
-
+- (void)rangeOver ;
 @end
