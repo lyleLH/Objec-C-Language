@@ -10,4 +10,10 @@
 
 @implementation MTTStudent
 
+- (void)rangeOver{
+    
+
+    
+}
+
 @end

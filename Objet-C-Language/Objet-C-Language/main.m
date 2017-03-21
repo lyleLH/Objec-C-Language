@@ -42,16 +42,19 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         //结构体的初始化
-        struct gstudent tom = {"tom liu",25,170};
-    
-        changeStudentHeight(&tom,180);//tom两个月后长到了180公分
+//        struct gstudent tom = {"tom liu",25,170};
+//    
+//        changeStudentHeight(&tom,180);//tom两个月后长到了180公分
+//        
+//        printf("tom现在的身高是%f\n",tom.height);
+//        
+//        MTTStudent * Kangkang = [[MTTStudent alloc] init];
+//        Kangkang->_age = 25;
+//        
+//        Student tom2 ={"tom liu",25,170};
         
-        printf("tom现在的身高是%f\n",tom.height);
         
-        MTTStudent * Kangkang = [[MTTStudent alloc] init];
-        Kangkang->_age = 25;
         
-        Student tom2 ={"tom liu",25,170};
         
         Class clas ;
         
