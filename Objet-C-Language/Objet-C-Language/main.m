@@ -53,6 +53,9 @@ int main(int argc, const char * argv[]) {
         
         Student tom2 ={"tom liu",25,170};
         
+        Class clas ;
+        
+        
         
     }
     return 0;
